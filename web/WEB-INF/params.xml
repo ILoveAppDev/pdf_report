@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+         
+    <db_classname>
+        oracle.jdbc.driver.OracleDriver
+    </db_classname>
+    
+    <db_server_url>
+        jdbc:oracle:thin:@//oradev.litens:1521/mytest
+    </db_server_url>
+    
+    <db_login_id>
+        test
+    </db_login_id>
+    
+    <db_login_pw>
+        mytest
+    </db_login_pw>
+    
+    <header_logo>
+        sample.jpg
+    </header_logo>
+    
+    
+    <Test_Query>
+    
+        select
+        
+            year,
+            month,
+            value,
+            comments
+
+        from test_data
+
+        where trim(year) = ? 
+        and trim(month) = ? 
+        and trim(location) = ? 
+        
+    </Test_Query>
+    
+    <Output_File>
+        
+        qpb.pdf
+				       
+    </Output_File>
+    
+    
+        
+</root>
